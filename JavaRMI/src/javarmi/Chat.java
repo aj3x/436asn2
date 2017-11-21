@@ -22,22 +22,22 @@ public class Chat extends UnicastRemoteObject implements ChatInterface{
     
     @Override
     public String getName() throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.name;
     }
 
     @Override
     public void send(String msg) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println(msg);
     }
 
     @Override
     public void setClient(ChatInterface c) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.client = c;
     }
 
     @Override
     public ChatInterface getClient() throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.client;
     }
     
 }

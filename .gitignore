@@ -29,3 +29,5 @@ hs_err_pid*
 /JavaCorba/nbproject/private/
 /JavaRMI/nbproject/private/
 
+/JavaRMI/build/
+/JavaRMI/dist/

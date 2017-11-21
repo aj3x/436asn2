@@ -1,0 +1,19 @@
+
+path=Virus/src/
+class=$(path)virus/
+all:
+	@make -s build
+	@make -s run
+
+build:
+	@javac $(class)Virus.java $(class)Graph.java $(class)Vertex.java
+
+run:
+	@java -classpath $(path) virus.Virus
+
+test:
+	@make -s build
+	@java -classpath $(path) virus.Virus test
+
+clean:
+	@rm -rf $(path)*.class
